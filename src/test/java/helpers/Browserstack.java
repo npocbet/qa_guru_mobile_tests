@@ -13,11 +13,11 @@ public class Browserstack {
         return given()
                 .auth().basic(config.username(), config.password())
                 .when()
-                .get("https://api-cloud.browserstack.com/app-automate/sessions/" + sessionId + ".json")
+                .get(config.remote_api_url() + sessionId + ".json")
                 .then()
                 .statusCode(200)
                 .log().body()
                 .extract()
-                .path("automation_session.video_url");
+                .path(config.video_path_on_api());
     }
 }

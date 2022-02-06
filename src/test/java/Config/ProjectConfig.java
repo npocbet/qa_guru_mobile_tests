@@ -27,9 +27,6 @@ public interface ProjectConfig extends Config {
     @DefaultValue("8.0")
     String os_version();
 
-    @Key("remoteDriverUrl")
-    String remoteDriverUrl();
-
     @Key("project")
     @DefaultValue("First Java Project")
     String project();
@@ -41,5 +38,11 @@ public interface ProjectConfig extends Config {
     @Key("name")
     @DefaultValue("first_test")
     String name();
+
+    @Key("remote_api_url")
+    String remote_api_url();
+
+    @Key("video_path_on_api")
+    String video_path_on_api();
 
 }

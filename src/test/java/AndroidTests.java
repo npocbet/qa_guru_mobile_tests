@@ -36,6 +36,4 @@ public class AndroidTests extends TestBase {
             $(MobileBy.id(("android:id/content"))).shouldBe(enabled);
         });
     }
-
-
 }
