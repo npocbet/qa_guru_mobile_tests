@@ -21,9 +21,11 @@ public class BrowserStackMobileDriver implements WebDriverProvider {
         desiredCapabilities.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
 
         // Specify device and os_version for testing
-        desiredCapabilities.setCapability("device", "Google Pixel 3");
-        desiredCapabilities.setCapability("os_version", "9.0");
 
+//        desiredCapabilities.setCapability("device", "Google Pixel 3");
+//        desiredCapabilities.setCapability("os_version", "9.0");
+        desiredCapabilities.setCapability("device", "Samsung Galaxy S9");
+        desiredCapabilities.setCapability("os_version", "8.0");
         // Set other BrowserStack capabilities
         desiredCapabilities.setCapability("project", "First Java Project");
         desiredCapabilities.setCapability("build", "browserstack-build-1");
