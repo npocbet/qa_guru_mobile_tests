@@ -1,11 +1,17 @@
 package helpers;
 
+import Config.ProjectConfig;
+import org.aeonbits.owner.ConfigFactory;
+
 import static io.restassured.RestAssured.given;
 
 public class Browserstack {
+    public static ProjectConfig config = ConfigFactory.create(ProjectConfig.class, System.getProperties());
+
+
     public static String videoUrl(String sessionId) {
         return given()
-                .auth().basic("svyatoslavkravts_qty3dX", "Vp4F7XXxpn2A2MdgxqF4")
+                .auth().basic(config.username(), config.password())
                 .when()
                 .get("https://api-cloud.browserstack.com/app-automate/sessions/" + sessionId + ".json")
                 .then()
