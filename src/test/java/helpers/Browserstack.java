@@ -1,12 +1,12 @@
 package helpers;
 
-import Config.ProjectConfig;
+import config.BrowserStackConfig;
 import org.aeonbits.owner.ConfigFactory;
 
 import static io.restassured.RestAssured.given;
 
 public class Browserstack {
-    public static ProjectConfig config = ConfigFactory.create(ProjectConfig.class, System.getProperties());
+    public static BrowserStackConfig config = ConfigFactory.create(BrowserStackConfig.class, System.getProperties());
 
 
     public static String videoUrl(String sessionId) {

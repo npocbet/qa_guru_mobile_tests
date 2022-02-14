@@ -1,14 +1,12 @@
-package Config;
+package config;
 
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
-        "system:properties",
-        "classpath:config/local.properties",
-        "classpath:config/remote.properties"
+        "system:properties"
 })
-public interface ProjectConfig extends Config {
+public interface BrowserStackConfig extends Config {
 
     @Key("username")
     String username();

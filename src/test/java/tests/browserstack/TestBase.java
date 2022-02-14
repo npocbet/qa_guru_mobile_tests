@@ -2,7 +2,7 @@ package tests.browserstack;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import drivers.BrowserStackMobileDriver;
+import drivers.AndroidMobileDriver;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -17,7 +17,7 @@ public class TestBase {
     @BeforeAll
     public static void setUp(){
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        Configuration.browser = BrowserStackMobileDriver.class.getName();
+        Configuration.browser = AndroidMobileDriver.class.getName();
         Configuration.startMaximized = false;
         Configuration.browserSize = null;
         Configuration.timeout = 10000;
