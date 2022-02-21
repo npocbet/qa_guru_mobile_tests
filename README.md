@@ -2,9 +2,10 @@
 
 ## Test Cases:
 
-- Pass walkthrough
-- Search by query
-- Add new language
+- Wikipedia search (find Browserstack page)
+- Support page is available
+- Open edit's page
+- Getting started slider
 
 ### Libraries have been used in this project
 
