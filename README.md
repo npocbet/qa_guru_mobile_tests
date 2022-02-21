@@ -53,11 +53,11 @@ Usually, tests run on Browserstack or Selenoid via Appium.
 >Selenoid is one of implementation of original Selenium hub. It is using Docker to launch browsers. 
 
 # Jenkins
->Jenkins â€“ an open source automation server which enables developers around the world to reliably build, test, and deploy their software
+>Jenkins - an open source automation server which enables developers around the world to reliably build, test, and deploy their software
 
 ## Jenkins job
 Example of Jenkins job that executes tests
-<a target="_blank" href="https://jenkins.autotests.cloud/job/09-Oleynik_Vladimir-mobile/">click here to open jenkins job</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/09-npocbet_hw_20/">click here to open jenkins job</a>
 
 ## Jenkins parameters
 You can change this params to run test on different environments, servers, etc...
