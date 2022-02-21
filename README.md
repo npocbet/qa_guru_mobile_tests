@@ -30,25 +30,19 @@
 ### For run tests need to select build params:
 
 * running server (browserstack or selenoid)
-* environment (for telegram notification)
 * comment (for telegram notification)
 
 Run tests on browserstack:
 
 ```bash
-gradle clean test -DdeviceHost=browsertack
+gradle clean test -Dhost=BROWSERSTACK
 ```
 
 Run tests on selenoid:
 
 ```bash
-gradle clean test -DdeviceHost=selenoid
-```
-
-Run test with not filled browserstack properties:
-
-```bash
-gradle -DdeviceHost=browserstack -Duser={put here browserstack user} -Dkey={put here browserstack access key} -Dapp={put here your browserstack app id} clean test
+gradle clean test -Dhost=SELENOID or
+gradle clean test
 ```
 
 Usually, tests run on Browserstack or Selenoid via Appium.
