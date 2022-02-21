@@ -28,15 +28,15 @@ public class AndroidMobileDriver implements WebDriverProvider {
             return getBrowserStackMobileDriver(desiredCapabilities);
         }
 
-        if (hostConfig.host().equals(Host.SELENOID)) {
-            return getSelenoidMobileDriver(desiredCapabilities);
+        if (hostConfig.host().equals(Host.LOCAL)) {
+            return getLocalMobileDriver(desiredCapabilities);
         }
 
         if (hostConfig.host().equals(Host.REAL)) {
             return getRealMobileDriver(desiredCapabilities);
         }
 
-        return getLocalMobileDriver(desiredCapabilities);
+        return getSelenoidMobileDriver(desiredCapabilities);
 
     }
 

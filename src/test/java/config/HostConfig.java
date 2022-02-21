@@ -9,6 +9,6 @@ import org.aeonbits.owner.Config;
 public interface HostConfig extends Config {
 
     @Key("host")
-    @DefaultValue("local")
+    @DefaultValue("SELENOID")
     Host host();
 }
