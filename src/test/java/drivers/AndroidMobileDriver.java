@@ -37,7 +37,6 @@ public class AndroidMobileDriver implements WebDriverProvider {
         }
 
         return getSelenoidMobileDriver(desiredCapabilities);
-
     }
 
     public AndroidDriver<WebElement> getBrowserStackMobileDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
@@ -83,7 +82,6 @@ public class AndroidMobileDriver implements WebDriverProvider {
 
         return new AndroidDriver(
                 getLocalWebBrowserUrl(), desiredCapabilities);
-
     }
 
     public AndroidDriver<WebElement> getRealMobileDriver(@Nonnull DesiredCapabilities desiredCapabilities) {
@@ -98,7 +96,6 @@ public class AndroidMobileDriver implements WebDriverProvider {
 
         return new AndroidDriver(
                 getLocalWebBrowserUrl(), desiredCapabilities);
-
     }
 
     public static URL getLocalWebBrowserUrl() {
@@ -116,5 +113,4 @@ public class AndroidMobileDriver implements WebDriverProvider {
             throw new RuntimeException(e);
         }
     }
-
 }

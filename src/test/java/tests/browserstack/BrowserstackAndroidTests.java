@@ -21,21 +21,13 @@ public class BrowserstackAndroidTests extends TestBase {
     @Test
     void openSupportTest() {
         step("Open app menu", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/menu_overflow_button")).click()
-        );
-
+                $(MobileBy.id("org.wikipedia.alpha:id/menu_overflow_button")).click());
         step("Open support page", () ->
-                $(MobileBy.id("org.wikipedia.alpha:id/explore_overflow_donate")).click()
-        );
-
+                $(MobileBy.id("org.wikipedia.alpha:id/explore_overflow_donate")).click());
         step("Open support page in browser", () ->
                 $(MobileBy.id("android:id/resolver_list"))
-                        .$(MobileBy.id("android:id/icon")).click()
-
-        );
-
-        step("Check: page content is enabled", () -> {
-            $(MobileBy.id(("android:id/content"))).shouldBe(enabled);
-        });
+                        .$(MobileBy.id("android:id/icon")).click());
+        step("Check: page content is enabled", () ->
+            $(MobileBy.id(("android:id/content"))).shouldBe(enabled));
     }
 }

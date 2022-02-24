@@ -33,7 +33,6 @@ public class AndroidBrowserStackSample {
         caps.setCapability("build", "browserstack-build-1");
         caps.setCapability("name", "first_test");
 
-
         // Initialise the remote Webdriver using BrowserStack remote URL
         // and desired capabilities defined above
         AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(
@@ -54,9 +53,7 @@ public class AndroidBrowserStackSample {
                 "android.widget.TextView");
         assert(allProductsName.size() > 0);
 
-
         // Invoke driver.quit() after the test is done to indicate that the test is completed.
         driver.quit();
-
     }
 }
